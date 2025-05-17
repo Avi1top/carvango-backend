@@ -1,0 +1,129 @@
+:root {
+  --background-green: rgb(8, 59, 60); /* Dark greenish background color */
+  --font-yellow: rgb(216, 152, 40);   /* Yellowish font color */
+  --hover-white: white; /* White color for hover effects */
+}
+
+.Footer {
+  background-color: var(--background-green); /* Apply background color */
+  color: var(--font-yellow); /* Apply font color */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  margin-top: 1%;
+}
+
+.FooterContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures vertical alignment like in nav */
+  padding-bottom: 20px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.LogoSection {
+  flex: 0.5;
+  text-align: left;
+}
+
+.Logo {
+  max-width: 100px;
+}
+
+.QuickLinks,
+.ContactInfo,
+.Policies {
+  flex: 1;
+  text-align: left;
+}
+
+.SectionTitle {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: var(--font-yellow); /* Apply yellow font color */
+}
+
+.List {
+  list-style: none;
+  padding: 0;
+}
+
+.Link {
+  text-decoration: none;
+  color: var(--font-yellow); /* Apply link color */
+  font-weight: bold;
+  transition: color 0.3s, text-shadow 0.3s; /* Smooth transitions */
+  padding: 10px;
+}
+
+.Link:hover {
+  color: var(--hover-white); /* White on hover */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add subtle text-shadow on hover */
+}
+
+.Info {
+  color: var(--font-yellow); /* Apply yellow font color */
+   text-decoration: none;
+  color: var(--font-yellow); /* Apply link color */
+  font-weight: bold;
+  transition: color 0.3s, text-shadow 0.3s; /* Smooth transitions */
+  padding-left: 10px;
+}
+
+.Copyright {
+  color: var(--font-yellow); /* Apply yellow font color */
+}
+
+/* Buttons similar to nav button styling */
+.footerButton {
+  color: var(--font-yellow); /* Set button text color */
+  background-color: transparent; /* Transparent background */
+  border: 1px solid var(--font-yellow); /* Border with yellow */
+  padding: 5px 10px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footerButton:hover {
+  color: var(--hover-white); /* White on hover */
+  background-color: var(--font-yellow); /* Yellow background on hover */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add subtle text-shadow */
+}
+.SocialMediaIcons {
+  
+  bottom: 10px;
+  display: flex;
+  flex-direction:column;
+  gap: 10px;
+  
+}
+
+.IconLink {
+  color: var(--font-yellow); /* Use the yellow color variable */
+  font-size: 24px; /* Adjust size as needed */
+  transition: color 0.3s;
+  font-size: 14px;
+  text-align: left;
+}
+
+.IconLink:hover {
+  color: var(--hover-white); /* White color on hover */
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .FooterContent {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .QuickLinks,
+  .ContactInfo,
+  .Policies {
+    text-align: center; /* Center align text on smaller screens */
+    margin-bottom: 20px;
+  }
+}

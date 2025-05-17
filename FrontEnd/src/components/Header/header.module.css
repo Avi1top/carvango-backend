@@ -1,0 +1,9 @@
+.header {
+  height: 100px; /* Adjust according to your header's height */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1002; /* Ensure the header is above the sidebar and other content */
+  
+}

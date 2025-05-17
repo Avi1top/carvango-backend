@@ -1,0 +1,22 @@
+.mainContainer {
+  display: flex;
+  position: relative;
+}
+
+.menuButton {
+  position: fixed;
+  top: 100px; /* Adjust this value according to the height of your header */
+  left: 10px;
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.content {
+  flex: 1;
+  margin-left: 0;
+  transition: margin-left 0.3s;
+}
+
+.contentShift {
+  margin-left: 250px; /* This should match the width of the sidebar */
+  transition: margin-left 0.3s;
+}

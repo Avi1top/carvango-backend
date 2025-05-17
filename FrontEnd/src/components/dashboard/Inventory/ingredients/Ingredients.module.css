@@ -1,0 +1,120 @@
+/* Ingredients.module.css */
+
+.ingredientsPage {
+  padding: 20px;
+}
+
+.header {
+   display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: flex-start; /* Align buttons to the left */
+}
+
+.backButton,
+.addButton {
+  padding: 10px 20px;
+  font-size: 10px;
+}
+
+.backButton,
+.editButton {
+  background-color: #1d4e89;
+}
+
+.addButton{
+  background-color: #1d4e89;
+  color: white;
+}
+
+.editButton,
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.2s;
+  margin-right: 5px;
+}
+
+.editButton:hover,
+.deleteButton:hover {
+  transform: scale(1.1);
+}
+
+.deleteButton {
+  color: red;
+}
+
+.editButton {
+  color: blue;
+}
+
+.activeIcon {
+  color: green;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.1s;
+}
+
+.inactiveIcon {
+  color: gray;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.1s;
+}
+
+.inactiveRow {
+  background-color: #f8d7da;
+  color : gray;
+}
+
+.form input,
+.form select {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.checkboxContainer label {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxContainer input[type="checkbox"] {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center; /* Center the search bar */
+  margin-bottom: 20px;
+}

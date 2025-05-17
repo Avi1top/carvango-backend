@@ -1,0 +1,137 @@
+/* Dishes.module.css */
+
+.dishesPage {
+  padding: 20px;
+}
+
+.dishesPage h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.chartContainer {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input,
+.form textarea,
+.form select,
+.form button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.checkboxContainer label {
+  display: flex;
+  align-items: center;
+}
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: flex-start; /* Align buttons to the left */
+}
+.addButton {
+  padding: 10px 20px;
+  font-size: 10px;
+  background-color: #1d4e89;
+  color: white;
+}
+.checkboxContainer input[type="checkbox"] {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style for inactive rows in DataGrid */
+.inactiveRow {
+  background-color: #eca1a8;
+  color: gray;
+}
+.editButton,
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.2s;
+  margin-right: 5px;
+}
+
+.editButton:hover,
+.deleteButton:hover {
+  transform: scale(1.1);
+}
+
+.deleteButton {
+  color: red;
+}
+
+.editButton {
+  color: blue;
+}
+
+.activeIcon {
+  color: green;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.1s;
+}
+
+.inactiveIcon {
+  color: gray;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.1s;
+}
+
+.searchInput {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.archivedRow {
+  background-color: #c8374c; /* Dark gray color for archived rows */
+  color: rgb(0, 0, 0); /* Change text color to white for better contrast */
+}

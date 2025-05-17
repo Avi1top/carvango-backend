@@ -1,0 +1,42 @@
+.notification {
+  background-color: #fdd835;
+  padding: 20px;
+  border-radius: 5px;
+  color: #333;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.redirectButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.redirectButton:hover {
+  background-color: #45a049;
+}
+
+.closeButton {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background-color: darkred;
+}

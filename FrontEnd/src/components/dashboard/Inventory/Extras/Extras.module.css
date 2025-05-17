@@ -1,0 +1,185 @@
+.extrasPage {
+  padding: 20px;
+  text-align: center; /* Center content inside extrasPage */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input,
+.form select,
+.form button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.extrasTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.extrasTable th,
+.extrasTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.extrasTable th {
+  background-color: #f2f2f2;
+}
+
+.extrasTable td button {
+  margin-right: 5px;
+}
+
+.chartContainer {
+  margin: 20px 0;
+}
+
+.backButton {
+  margin-bottom: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.editButton,
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.2s;
+  margin-right: 5px;
+}
+
+.editButton:hover,
+.deleteButton:hover {
+  transform: scale(1.1);
+}
+
+.deleteButton {
+  color: red;
+}
+
+.editButton {
+  color: blue;
+}
+
+.activeIcon {
+  color: green;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.1s;
+}
+
+.inactiveIcon {
+  color: gray;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.1s;
+}
+
+.activeIcon:hover,
+.inactiveIcon:hover {
+  transform: scale(1.1);
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.checkboxContainer label {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxContainer input[type="checkbox"] {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Center the search bar */
+.searchBarContainer {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-bottom: 30px;
+}
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: flex-start; /* Align buttons to the left */
+}
+.addButton {
+  padding: 10px 20px;
+  font-size: 10px;
+  background-color: #1d4e89;
+  color: white;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.inactiveRow{
+  background-color: #f8d7da;
+  color : gray;
+}

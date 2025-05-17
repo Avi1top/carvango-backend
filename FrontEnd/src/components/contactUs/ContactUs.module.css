@@ -1,0 +1,47 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d89828;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form {
+  
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 16px; /* Add gap between form elements */
+}
+
+.btnSubmit {
+  align-self: center; /* Align the button to the center */
+  margin-top: 20px;
+}
+
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.form {
+  flex: 1;
+  margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.reviewsSection {
+  flex: 1;
+  /* Add any additional styles needed for the reviews section */
+}

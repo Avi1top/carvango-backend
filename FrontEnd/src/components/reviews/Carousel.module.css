@@ -1,0 +1,40 @@
+.carouselContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.reviewCard {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.activeReview {
+  opacity: 1;
+}
+
+.profileImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.smallReview {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #007bff;
+}

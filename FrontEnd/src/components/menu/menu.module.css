@@ -1,0 +1,133 @@
+/* Page styling */
+.menuPage {
+  text-align: center;
+  background-color: #fff8e1;
+  padding: 20px;
+}
+
+/* Header styling */
+.menuHeader {
+  background-image: url("../../assets/imgs/Menu-Header_pages-to-jpg-0001.webp");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+
+/* Main content styling */
+.menuMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Grid for food items */
+.foodGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Individual meal item styling */
+.mealItem {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mealItem.selected {
+  box-shadow: 0 4px 8px rgba(255, 204, 128, 1);
+}
+
+.mealItem:hover {
+  transform: scale(1.02);
+}
+
+.mealImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Meal info styling */
+.mealInfo {
+  padding: 20px;
+  text-align: left;
+}
+
+.mealInfo h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+}
+
+.mealInfo p {
+  margin: 0 0 10px;
+  color: #666;
+}
+
+/* Button styling */
+.buyButton {
+  background-color: #4caf50;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1em;
+  color: white;
+}
+
+.buyButton:hover {
+  background-color: #45a049;
+}
+
+.ingredients {
+  padding: 0 20px 20px;
+  text-align: left;
+}
+
+.ingredients h3 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
+
+.ingredients ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ingredients li {
+  margin: 0 0 5px;
+  color: #666;
+}
+
+.menuFooter {
+  background-color: #fff;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.menuFooter p {
+  margin: 0;
+  color: #666;
+}
+.menuContainer {
+  padding:10px;
+}
+
+
+.closedMessage {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}

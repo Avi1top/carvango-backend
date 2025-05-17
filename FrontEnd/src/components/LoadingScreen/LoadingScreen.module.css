@@ -1,0 +1,23 @@
+/* Loading screen container */
+.loadingScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+/* Loading logo animation */
+.loadingLogo {
+  width: 150px; /* Adjust size as needed */
+  animation: spin 2s linear infinite;
+}
+
+/* Spin animation for logo */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

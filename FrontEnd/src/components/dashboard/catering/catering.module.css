@@ -1,0 +1,295 @@
+.main {
+  text-align: center;
+  padding: 20px;
+}
+
+.headerSection {
+  margin-bottom: 20px;
+}
+
+.headerImage {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.imagesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.carouselButton {
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  color: #333;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  padding: 0; /* Ensure no extra padding */
+}
+
+.carouselButton:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.carouselButton:first-child {
+  left: 10px;
+}
+
+.carouselButton:last-child {
+  right: 10px;
+}
+
+.imageQueue {
+  display: flex;
+  overflow: hidden; /* Hide the scrollbar */
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.imageWrapper {
+  flex: 0 0 auto;
+  margin: 0 10px;
+}
+
+.image {
+  cursor: pointer;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.orderInput {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: 50px;
+}
+
+.moreInfoButton {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.moreInfoButton:hover {
+  background-color: #c9302c;
+}
+
+.calendarSection {
+  margin-top: 20px;
+}
+
+.calendarWrapper {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rbc-calendar {
+  font-family: 'Arial', sans-serif;
+}
+
+.rbc-toolbar {
+  background-color: #d9534f;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.rbc-toolbar button {
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.rbc-toolbar button:hover {
+  text-decoration: underline;
+}
+
+.rbc-month-view,
+.rbc-time-view {
+  border: none;
+}
+
+.rbc-day-bg {
+  background-color: #f2f2f2;
+}
+
+.rbc-date-cell {
+  color: #333;
+  font-weight: bold;
+}
+
+.rbc-event {
+  background-color: #5bc0de;
+  border: 1px solid #46b8da;
+  color: white;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.rbc-event:hover {
+  background-color: #31b0d5;
+}
+
+.rbc-today {
+  background-color: #dff0d8 !important;
+  color: #3c763d;
+  border-radius: 4px;
+}
+
+.rbc-off-range-bg {
+  background-color: #f5f5f5;
+  color: #bbb;
+}
+
+.imageModalContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Remove padding to ensure the image takes full space */
+}
+
+.enlargedImage {
+  width: 80%;
+  height: auto;
+  object-fit: contain; /* Ensure the image fits within the dialog */
+}
+
+.photoQueue img {
+  height: 150px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.arrow {
+  display: block; /* Ensure arrows are always visible */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 1; /* Ensure full opacity */
+  visibility: visible; /* Ensure visibility */
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.uploadButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.uploadButton:hover {
+  background-color: #0056b3;
+}
+
+.uploadStatus {
+  margin-top: 10px;
+  color: green;
+}
+
+/* Message Container */
+.messageContainer {
+  background-color: #e6f7ff; /* Light blue background */
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px 0;
+  max-width: 80%;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Message Tail */
+.messageContainer::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 30px; /* Position the tail */
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top-color: #e6f7ff;
+  border-bottom: 0;
+  margin-bottom: -15px;
+}
+
+/* Message Header */
+.messageHeader {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0050b3;
+}
+
+/* Message Body */
+.messageBody p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Labels */
+.messageBody p strong {
+  color: #0050b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .messageContainer {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .messageHeader {
+    font-size: 18px;
+  }
+
+  .messageBody p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,136 @@
+.orders-container {
+  padding-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.orders-container .MuiCard-root {
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: 360px;
+  min-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.orders-container .MuiCardContent-root {
+  padding: 20px;
+}
+
+.orders-container .MuiTypography-h5 {
+  font-size: 1.8rem;
+}
+
+.orders-container .MuiTypography-subtitle1,
+.orders-container .MuiTypography-body2 {
+  font-size: 1.2rem;
+}
+
+.orders-container .MuiTypography-h6 {
+  font-size: 1.5rem;
+}
+
+.orders-container .MuiButton-containedPrimary {
+  background-color: #6200ea;
+  color: white;
+}
+
+.orders-container .MuiButton-outlinedSecondary {
+  border-color: #6200ea;
+  color: #6200ea;
+}
+
+.orders-container .MuiButton-root {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.time-selection-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+.order-details {
+  flex: 1;
+  margin-right: 20px; /* Add space between order details and time selection */
+}
+
+.time-selection-modal {
+  flex: 1;
+  max-width: 400px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.time-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.time-buttons button {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 10px 0;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.time-buttons button:hover {
+  background-color: #ccc;
+}
+
+@media (max-width: 1200px) {
+  .orders-container .MuiCard-root {
+    flex: 1 1 calc(50% - 40px);
+  }
+
+  .time-selection-container {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 20px;
+  }
+
+  .order-details, .time-selection-modal {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .order-details {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .orders-container .MuiCard-root {
+    flex: 1 1 100%;
+  }
+
+  .time-selection-container {
+    padding: 10px;
+  }
+
+  .time-buttons {
+    grid-template-columns: 1fr;
+  }
+}

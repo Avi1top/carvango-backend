@@ -1,0 +1,133 @@
+.nav {
+  background-color: rgb(8, 59, 60); /* Initial background color */
+  /* padding: 10px 20px; Add padding for spacing */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align items vertically */
+}
+
+/* .nav.scrolled { */
+  /* background-color: rgba(8, 59, 60, 0.5); Faded background color */
+/* } */
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.cartLogo {
+  width: 30px; 
+  height: auto;
+}
+.logo img {
+  height: 80px; /* Set the height of the logo */
+  width: auto; /* Maintain aspect ratio */
+}
+.navContent {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align items vertically */
+  justify-content: flex-start; /* Align nav links to the start */
+  flex-grow: 1; /* Allow navContent to take available space */
+  gap: 20px; /* Add gap between nav links and buttons */
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display items in a row */
+  gap: 20px; /* Add gap between items */
+  margin-right: auto; /* Push the ul to the left */
+}
+
+.nav li {
+  margin: 0;
+}
+
+.nav a {
+  color: rgb(216, 152, 40); /* Set link color to yellow */
+  text-decoration: none;
+  font-family: "Arial", sans-serif; /* Apply font family */
+  font-weight: bold; /* Apply font weight */
+  transition: color 0.3s; /* Smooth transition for color change */
+  padding: 10px 15px;
+  font-size: 16px; /* Add font size to match other nav links */
+}
+
+.nav a:hover {
+  color: white; /* Set hover text color to white */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add text shadow on hover */
+}
+
+.active a {
+  color: white; /* Set active link text color to white */
+  border-radius: 5px;
+}
+
+.buttonGroup {
+  display: flex; /* Use flexbox for layout */
+  gap: 10px; /* Add gap between buttons */
+}
+
+.authButton {
+  color: rgb(216, 152, 40); /* Set button text color to yellow */
+  background-color: transparent; /* Transparent background to match links */
+  border: 1px solid rgb(216, 152, 40); /* Border color */
+  padding: 5px 10px; /* Padding */
+  text-decoration: none;
+  font-family: "Arial", sans-serif; /* Apply font family */
+  font-weight: bold; /* Apply font weight */
+  transition: color 0.3s, background-color 0.3s; /* Smooth transition for color and background change */
+  border-radius: 5px; /* Border radius */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Match font size of nav links */
+}
+
+.authButton:hover {
+  color: white; /* Set hover text color to white */
+  background-color: rgb(216, 152, 40); /* Set hover background color to yellow */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add text shadow on hover */
+}
+
+.menuIcon {
+  display: none; /* Hide menu icon by default */
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+
+  .navContent {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80%;
+    background-color: rgb(8, 59, 60);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+  }
+
+  .show {
+    display: block;
+    transform: translateX(0);
+  }
+
+  .nav ul {
+    flex-direction: column;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+}

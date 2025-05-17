@@ -1,0 +1,173 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+}
+
+.controls {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inputText,
+.select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.buttonGroupLeft,
+.buttonGroupRight {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.buttonPrimary {
+  background-color: #4caf50;
+  color: white;
+}
+
+.buttonSecondary {
+  background-color: #f44336;
+  color: white;
+}
+
+.buttonPrimary:hover {
+  background-color: #45a049;
+}
+
+.buttonSecondary:hover {
+  background-color: #e53935;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.responseContainer {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.itemList {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.itemList ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.itemList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.itemList li:last-child {
+  border-bottom: none;
+}
+
+.itemList button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.itemList button:hover {
+  background-color: #e53935;
+}
+
+.currentLocationButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+}
+
+.currentLocationButton:hover {
+  background-color: #45a049;
+}
+
+/* Marker highlighting */
+.marker {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.marker.highlight {
+  transform: scale(1.5);
+  color: green;
+}

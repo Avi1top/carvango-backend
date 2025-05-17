@@ -1,0 +1,97 @@
+.workHoursForm {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+  
+}
+
+.container { /* New class for the main container */
+  padding: 20px;
+}
+
+.dialog { /* New class for the dialog */
+  min-width: 500px; /* Adjust width as needed */
+}
+
+.dialogTitle { /* New class for the dialog title */
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.dialogContent { /* New class for the dialog content */
+  padding: 20px;
+}
+
+.tableContainer { /* New class for the table container */
+  margin-top: 10px;
+}
+
+.table { /* New class for the table */
+  width: 100%;
+}
+
+.tableCell { /* New class for table cells */
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.tableRow { /* New class for table rows */
+  transition: background-color 0.3s ease;
+}
+
+.tableRow:hover { /* Hover effect for table rows */
+  background-color: #f5f5f5;
+}
+
+.textField { /* New class for text fields */
+  width: 100px;
+}
+
+.statusButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.statusButton:hover {
+  background-color: #45a049;
+}
+
+.statusButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.cancelButton { /* New class for the cancel button */
+  background-color: #f44336; /* Red color */
+  color: white;
+}
+
+.cancelButton:hover { /* Hover effect for cancel button */
+  background-color: #d32f2f;
+}
+.button{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+.submitButton { /* New class for the submit button */
+  background-color: #007bff;
+  color: white;
+}
+
+.submitButton:hover { /* Hover effect for submit button */
+  background-color: #0056b3;
+}
